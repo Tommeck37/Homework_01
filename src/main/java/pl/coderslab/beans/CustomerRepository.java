@@ -1,9 +1,12 @@
 package pl.coderslab.beans;
 
+import java.util.List;
+
 public interface CustomerRepository {
-    public void add();
+    public void add(Customer customer);
 
-    public void remove();
+    public void remove(Customer customer);
 
-    public void retrieve();
+    public List<Customer> retrieve();
+
 }
